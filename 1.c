@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
   xs_a = malloc(it*sizeof(float));
   xs_r = malloc(it*sizeof(float));
 
-  C_int = fopen("./Prob_Acep/Prob_Acep.txt", "a");
+  C_int = fopen("./Prob_Acep/Prob_Acep.txt", "a")
 
   srand(time(NULL));
 
