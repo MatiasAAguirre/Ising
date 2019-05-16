@@ -5,7 +5,7 @@
 
 
 int main(int argc, char *argv[]) {
-  float delta=0.5, x_n, x_v, x_i, x_id, x_i2, r, p=0.0;
+  float delta=0.5, x_n, x_v, r, p=0.0;//, x_i, x_id, x_i2;
   float *xs_a, *xs_r;
   int i, it=1000000;
   FILE *C_int;
@@ -37,9 +37,9 @@ int main(int argc, char *argv[]) {
   //while(abs((p/it)-0.4)<0.5) {
     //p=0.0;
   for(delta=0.5; delta<2; delta+=0.001){
-    x_i=0;
-    x_id=0;
-    x_i2=0;
+    //x_i=0;
+    //x_id=0;
+    //x_i2=0;
     for(i=1;i<it;i++) {
       r = ((float)rand())/((float)RAND_MAX);
 
